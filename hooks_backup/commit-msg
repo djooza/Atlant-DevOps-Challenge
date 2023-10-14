@@ -7,7 +7,7 @@ pattern="^(feature|fix|refactor|wip):[[:space:]].{1,50}$"
 
 if [[ ! "$commit_msg" =~ $pattern ]]; then
   echo "Error: Commit message format is invalid."
-  echo "Commit messages must be in the format: <type>: <description> (max 50 characters)"
+  echo "Commit messages must be in the format: <type> (feature/fix/refactor/wip): <description> (max 50 characters)"
   exit 1
 fi
 
